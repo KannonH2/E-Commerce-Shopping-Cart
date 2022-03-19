@@ -1,25 +1,26 @@
 {
-  "name": "shopping-cart",
-  "proxy": "http://localhost:5000/",
+  "name": "react-shopping-cart",
+  "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "body-parser": "^1.19.2",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.7",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-modal": "^3.14.4",
-    "react-redux": "^7.2.6",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "body-parser": "^1.19.0",
+    "eslint-visitor-keys": "^3.3.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-modal": "^3.11.2",
+    "react-redux": "^7.2.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "5.0.0",
-    "redux": "^4.1.2",
-    "redux-thunk": "^2.4.1",
-    "shortid": "^2.2.16",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "shortid": "^2.2.15"
   },
   "scripts": {
     "server": "nodemon server.js",
@@ -29,10 +30,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
