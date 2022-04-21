@@ -4,11 +4,12 @@ const mongoose = require("mongoose");
 const shortid = require("shortid");
 
 
-const mongodb_uri = process.env.MONGODB_URI;
+const mongodb_uri = "mongodb+srv://donjuanpizzeria:Fer32609676@cluster0.wm8z2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 
 const app = express();
 app.use(bodyParser.json());
+
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

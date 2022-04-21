@@ -4,10 +4,10 @@
       "_id": "burger1",
       "image": "/images/burger1.jpg",
       "name": "Burger",
-      "title": "Burger Cheddar Doble",
+      "title": "Burger Cheddar",
       "description": "Doble Burger Casera con queso Cheddar",
       "availableSizes": ["Simple", "Doble"],
-      "price": 49.9
+      "price": 460
     },
     {
       "_id": "burger2",
@@ -16,7 +16,7 @@
       "title": "Burger Remolacha",
       "description": "Burger Casera de Remolacha, muzza, cebolla caramelizada, morron y huevo",
       "availableSizes": ["Simple", "Doble"],
-      "price": 49.9
+      "price": 590
     },
     {
       "_id": "burger3",
@@ -25,7 +25,7 @@
       "title": "Burger Don Juan",
       "description": "Burger Casera, queso Cheddar, cebolla caramelizada, panceta a la plancha y huevo",
       "availableSizes": ["Simple", "Doble"],
-      "price": 49.9
+      "price": 590
     },
     {
       "_id": "burger4",
@@ -34,7 +34,7 @@
       "title": "Burger Clasica",
       "description": "Burger Casera, Lechuga, Tomate y Cebolla",
       "availableSizes": ["Simple", "Doble"],
-      "price": 49.9
+      "price": 450
     },
     {
       "_id": "pizza1",
@@ -43,7 +43,7 @@
       "title": "Pizza Muzzarella",
       "description": "Salsa, Muzzarella, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 570
     },
     {
       "_id": "pizza2",
@@ -52,7 +52,7 @@
       "title": "Pizza Napolitana",
       "description": "Salsa, Muzzarella, Tomate, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 650
     },    {
       "_id": "pizza3",
       "image": "/images/product3.jpg",
@@ -60,7 +60,7 @@
       "title": "Pizza Especial",
       "description": "Salsa, Muzzarella, Jamon, Morron, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 750
     },    {
       "_id": "pizza4",
       "image": "/images/product4.jpg",
@@ -68,7 +68,7 @@
       "title": "Pizza Fugaza Azul",
       "description": "Salsa, Muzzarella, Cebolla Caramelizada, Roquefort, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 710
     },    {
       "_id": "pizza5",
       "image": "/images/product5.jpg",
@@ -76,7 +76,7 @@
       "title": "Pizza Fugaza",
       "description": "Salsa, Muzzarella, Cebolla Caramelizada, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 650
     },    {
       "_id": "pizza6",
       "image": "/images/product6.jpg",
@@ -84,7 +84,7 @@
       "title": "Pizza Panceta y Huevo",
       "description": "Salsa, Muzzarella, Panceta Ahumada, 4 huevos a la plancha, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 850
     },    {
       "_id": "pizza7",
       "image": "/images/product7.jpg",
@@ -92,7 +92,7 @@
       "title": "Pizza Papas Fritas y Huevos",
       "description": "Salsa, Muzzarella, Papas Fritas, 4 huevos a la plancha, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 830
     },    {
       "_id": "pizza8",
       "image":"/images/product8.jpg",
@@ -100,7 +100,7 @@
       "title": "Pizza Roquefort",
       "description": "Salsa, Muzzarella, Roquefort, Oregano, Aceitunas",
       "availableSizes": ["Media", "Grande"],
-      "price": 49.9
+      "price": 680
     },
     {
       "_id": "sand1",
@@ -109,7 +109,7 @@
       "title": "Sandwich Pollo Rebozado",
       "description": "Pechuga de pollo rebozada, Mayonesa Provenzal, Lechuga y Tomate",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 350
     },
     {
       "_id": "sand2",
@@ -118,7 +118,7 @@
       "title": "Sandwich Primavera",
       "description": "Jamon, Queso Chedar, Tomate, Lechuga y Cebolla",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 250
     },
     {
       "_id": "sand3",
@@ -127,7 +127,7 @@
       "title": "Sandwich Fugaza Azul",
       "description": "Milanesa de pollo, Muzzarella, Queso Roquefort y Cebolla caramelizada",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 670
     },
     {
       "_id": "sand4",
@@ -136,7 +136,7 @@
       "title": "Sandwich Don Juan",
       "description": "Milanesa de pollo, Muzzarella, Tomate, Jamon y huevo",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 690
     },
     {
       "_id": "sand5",
@@ -145,7 +145,7 @@
       "title": "Sandwich Panceta y Huevo",
       "description": "Milanesa de polla, Muzzarella, Panceta y 2 Huevos",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 740
     },
     {
       "_id": "mila1",
@@ -154,7 +154,7 @@
       "title": "Milanesa Napolitana",
       "description": "Milanesa de Pollo, Salsa, Muzzarella, Jamon, Tomate y aceitunas",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 670
     },
     {
       "_id": "mila2",
@@ -163,7 +163,7 @@
       "title": "Milanesa Fugaza",
       "description": "Milanesa de Pollo, Salsa, Muzzarella, Cebolla Caramelizada y aceitunas",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 580
     },
     {
       "_id": "mila3",
@@ -172,7 +172,7 @@
       "title": "Milanesa Cuatro Quesos",
       "description": "Milanesa de Pollo, Salsa, Muzzarella, Roquefort, Cheddar, Parmesano y aceitunas",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 680
     },
     {
       "_id": "mila4",
@@ -181,7 +181,7 @@
       "title": "Milanesa de Panceta y Huevo",
       "description": "Milanesa de Pollo, Salsa, Muzzarella, Panceta, 2 Huevos y aceitunas",
       "availableSizes": ["Unico"],
-      "price": 49.9
+      "price": 740
     },
     {
       "_id": "drink1",
@@ -190,7 +190,7 @@
       "title": "Agua",
       "description": "Botella de 500cc",
       "availableSizes": ["600cc"],
-      "price": 49.9
+      "price": 90
     },
     {
       "_id": "drink2",
@@ -199,7 +199,7 @@
       "title": "Coca Cola",
       "description": "Botella de 600cc",
       "availableSizes": ["600cc"],
-      "price": 49.9
+      "price": 90
     },
     {
       "_id": "drink3",
@@ -208,7 +208,7 @@
       "title": "Sprite",
       "description": "Botella de 600cc",
       "availableSizes": ["600cc"],
-      "price": 49.9
+      "price": 90
     },
     {
       "_id": "drink4",
@@ -217,7 +217,7 @@
       "title": "Fanta",
       "description": "Botella de 600cc",
       "availableSizes": ["600cc"],
-      "price": 49.9
+      "price": 90
     },
     {
       "_id": "drink5",
@@ -226,7 +226,7 @@
       "title": "Coca Cola Zero", 
       "description": "Botella de 600cc",
       "availableSizes": ["600cc"],
-      "price": 49.9
+      "price": 90
     },
     {
       "_id": "drink6",
@@ -235,7 +235,7 @@
       "title": "Schweppes Pomelo",
       "description": "Botella de 600cc",
       "availableSizes": ["600cc"],
-      "price": 49.9
+      "price": 90
     },
     {
       "_id": "drink7",
@@ -244,7 +244,7 @@
       "title": "Cerveza Bremen Pinta",
       "description": "Cerveza artesanal bremen rubia o roja",
       "availableSizes": ["500cc"],
-      "price": 49.9
+      "price": 190
     },
     {
       "_id": "drink8",
@@ -253,7 +253,7 @@
       "title": "Cerveza Bremen Litro",
       "description": "drinknesa de Pollo, Salsa, Muzzarella, Panceta, 2 Huevos y aceitunas",
       "availableSizes": ["1lt"],
-      "price": 49.9
+      "price": 390
     },
     {
       "_id": "papas1",
@@ -262,7 +262,7 @@
       "title": "Papas Fritas",
       "description": "Papas fritas Chicas",
       "availableSizes": ["Chicas"],
-      "price": 49.9
+      "price": 250
     },
     {
       "_id": "papas2",
@@ -271,7 +271,7 @@
       "title": "Papas Fritas",
       "description": "Papas fritas Grandes",
       "availableSizes": ["Grandes"],
-      "price": 49.9
+      "price": 350
     }
   ]
 }
