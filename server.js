@@ -6,6 +6,12 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json());
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
   useNewUrlParser: true,
   useCreateIndex: true,
@@ -17,6 +23,7 @@ const Product = mongoose.model(
   new mongoose.Schema({
     _id: { type: String, default: shortid.generate },
     title: String,
+    name: String,
     description: String,
     image: String,
     price: Number,
@@ -48,7 +55,7 @@ const Order = mongoose.model(
         type: String,
         default: shortid.generate,
       },
-      email: String,
+      phone: Number,
       name: String,
       address: String,
       total: Number,
@@ -56,6 +63,7 @@ const Order = mongoose.model(
         {
           _id: String,
           title: String,
+          name: String,
           price: Number,
           count: Number,
         },
@@ -70,7 +78,7 @@ const Order = mongoose.model(
 app.post("/api/orders", async (req, res) => {
   if (
     !req.body.name ||
-    !req.body.email ||
+    !req.body.phone ||
     !req.body.address ||
     !req.body.total ||
     !req.body.cartItems
@@ -79,6 +87,11 @@ app.post("/api/orders", async (req, res) => {
   }
   const order = await Order(req.body).save();
   res.send(order);
+});
+
+app.get("/api/orders", async (req, res) => {
+  const orders = await Order.find({});
+  res.send(orders);
 });
 
 const port = process.env.PORT || 5000;

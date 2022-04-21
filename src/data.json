@@ -1,52 +1,280 @@
 {
   "products": [
     {
-      "_id": "dress1",
-      "image": "/images/dress1.jpg",
-      "title": "Midi sundress with shirring detail",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "L", "XL", "XXL"],
-      "price": 29.9
+      "_id": "burger1",
+      "image": "/images/burger1.jpg",
+      "name": "Burger",
+      "title": "Burger Cheddar Doble",
+      "description": "Doble Burger Casera con queso Cheddar",
+      "availableSizes": ["Simple", "Doble"],
+      "price": 49.9
     },
     {
-      "_id": "dress2",
-      "image": "/images/dress2.jpg",
-      "title": "Midi sundress with ruched front",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "M", "L"],
-      "price": 18.9
+      "_id": "burger2",
+      "image": "/images/burger2.jpg",
+      "name": "Burger",
+      "title": "Burger Remolacha",
+      "description": "Burger Casera de Remolacha, muzza, cebolla caramelizada, morron y huevo",
+      "availableSizes": ["Simple", "Doble"],
+      "price": 49.9
     },
     {
-      "_id": "dress3",
-      "image": "/images/dress3.jpg",
-      "title": "Midi dress in pink ditsy floral",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "M", "L"],
-      "price": 14.9
+      "_id": "burger3",
+      "image": "/images/burger3.jpg",
+      "name": "Burger",
+      "title": "Burger Don Juan",
+      "description": "Burger Casera, queso Cheddar, cebolla caramelizada, panceta a la plancha y huevo",
+      "availableSizes": ["Simple", "Doble"],
+      "price": 49.9
     },
     {
-      "_id": "dress4",
-      "image": "/images/dress4.jpg",
-      "title": "cami maxi dress in polka dot",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["XL"],
-      "price": 25.9
+      "_id": "burger4",
+      "image": "/images/burger4.jpg",
+      "name": "Burger",
+      "title": "Burger Clasica",
+      "description": "Burger Casera, Lechuga, Tomate y Cebolla",
+      "availableSizes": ["Simple", "Doble"],
+      "price": 49.9
     },
     {
-      "_id": "dress5",
-      "image": "/images/dress5.jpg",
-      "title": "Frill mini dress in yellow polka dot",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["X", "L", "XL"],
-      "price": 10.9
+      "_id": "pizza1",
+      "image": "/images/product1.jpg",
+      "name": "Pizza",
+      "title": "Pizza Muzzarella",
+      "description": "Salsa, Muzzarella, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
     },
     {
-      "_id": "dress6",
-      "image": "/images/dress6.jpg",
-      "title": "Midi tea dress in blue and red spot",
-      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
-      "availableSizes": ["XL", "XXL"],
+      "_id": "pizza2",
+      "image": "/images/product2.jpg",
+      "name": "Pizza",
+      "title": "Pizza Napolitana",
+      "description": "Salsa, Muzzarella, Tomate, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },    {
+      "_id": "pizza3",
+      "image": "/images/product3.jpg",
+      "name": "Pizza",
+      "title": "Pizza Especial",
+      "description": "Salsa, Muzzarella, Jamon, Morron, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },    {
+      "_id": "pizza4",
+      "image": "/images/product4.jpg",
+      "name": "Pizza",
+      "title": "Pizza Fugaza Azul",
+      "description": "Salsa, Muzzarella, Cebolla Caramelizada, Roquefort, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },    {
+      "_id": "pizza5",
+      "image": "/images/product5.jpg",
+      "name": "Pizza",
+      "title": "Pizza Fugaza",
+      "description": "Salsa, Muzzarella, Cebolla Caramelizada, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },    {
+      "_id": "pizza6",
+      "image": "/images/product6.jpg",
+      "name": "Pizza",
+      "title": "Pizza Panceta y Huevo",
+      "description": "Salsa, Muzzarella, Panceta Ahumada, 4 huevos a la plancha, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },    {
+      "_id": "pizza7",
+      "image": "/images/product7.jpg",
+      "name": "Pizza",
+      "title": "Pizza Papas Fritas y Huevos",
+      "description": "Salsa, Muzzarella, Papas Fritas, 4 huevos a la plancha, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },    {
+      "_id": "pizza8",
+      "image":"/images/product8.jpg",
+      "name": "Pizza",
+      "title": "Pizza Roquefort",
+      "description": "Salsa, Muzzarella, Roquefort, Oregano, Aceitunas",
+      "availableSizes": ["Media", "Grande"],
+      "price": 49.9
+    },
+    {
+      "_id": "sand1",
+      "image": "/images/sand1.jpg",
+      "name": "Sandwich",
+      "title": "Sandwich Pollo Rebozado",
+      "description": "Pechuga de pollo rebozada, Mayonesa Provenzal, Lechuga y Tomate",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "sand2",
+      "image": "/images/sand2.jpg",
+      "name": "Sandwich",
+      "title": "Sandwich Primavera",
+      "description": "Jamon, Queso Chedar, Tomate, Lechuga y Cebolla",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "sand3",
+      "image": "/images/sand3.jpg",
+      "name": "Sandwich",
+      "title": "Sandwich Fugaza Azul",
+      "description": "Milanesa de pollo, Muzzarella, Queso Roquefort y Cebolla caramelizada",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "sand4",
+      "image": "/images/sand4.jpg",
+      "name": "Sandwich",
+      "title": "Sandwich Don Juan",
+      "description": "Milanesa de pollo, Muzzarella, Tomate, Jamon y huevo",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "sand5",
+      "image": "/images/sand5.jpg",
+      "name": "Sandwich",
+      "title": "Sandwich Panceta y Huevo",
+      "description": "Milanesa de polla, Muzzarella, Panceta y 2 Huevos",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "mila1",
+      "image": "/images/mila3.jpg",
+      "name": "Mila",
+      "title": "Milanesa Napolitana",
+      "description": "Milanesa de Pollo, Salsa, Muzzarella, Jamon, Tomate y aceitunas",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "mila2",
+      "image": "/images/mila2.jpg",
+      "name": "Mila",
+      "title": "Milanesa Fugaza",
+      "description": "Milanesa de Pollo, Salsa, Muzzarella, Cebolla Caramelizada y aceitunas",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "mila3",
+      "image": "/images/mila3.jpg",
+      "name": "Mila",
+      "title": "Milanesa Cuatro Quesos",
+      "description": "Milanesa de Pollo, Salsa, Muzzarella, Roquefort, Cheddar, Parmesano y aceitunas",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "mila4",
+      "image": "/images/mila4.jpg",
+      "name": "Mila",
+      "title": "Milanesa de Panceta y Huevo",
+      "description": "Milanesa de Pollo, Salsa, Muzzarella, Panceta, 2 Huevos y aceitunas",
+      "availableSizes": ["Unico"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink1",
+      "image": "/images/drink1.jpg",
+      "name": "drink",
+      "title": "Agua",
+      "description": "Botella de 500cc",
+      "availableSizes": ["600cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink2",
+      "image": "/images/drink2.jpg",
+      "name": "drink",
+      "title": "Coca Cola",
+      "description": "Botella de 600cc",
+      "availableSizes": ["600cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink3",
+      "image": "/images/drink3.jpg",
+      "name": "drink",
+      "title": "Sprite",
+      "description": "Botella de 600cc",
+      "availableSizes": ["600cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink4",
+      "image": "/images/drink4.jpg",
+      "name": "drink",
+      "title": "Fanta",
+      "description": "Botella de 600cc",
+      "availableSizes": ["600cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink5",
+      "image": "/images/drink5.jpg",
+      "name": "drink",
+      "title": "Coca Cola Zero", 
+      "description": "Botella de 600cc",
+      "availableSizes": ["600cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink6",
+      "image": "/images/drink6.jpg",
+      "name": "drink",
+      "title": "Schweppes Pomelo",
+      "description": "Botella de 600cc",
+      "availableSizes": ["600cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink7",
+      "image": "/images/drink7.jpg",
+      "name": "drink",
+      "title": "Cerveza Bremen Pinta",
+      "description": "Cerveza artesanal bremen rubia o roja",
+      "availableSizes": ["500cc"],
+      "price": 49.9
+    },
+    {
+      "_id": "drink8",
+      "image": "/images/drink8.jpg",
+      "name": "drink",
+      "title": "Cerveza Bremen Litro",
+      "description": "drinknesa de Pollo, Salsa, Muzzarella, Panceta, 2 Huevos y aceitunas",
+      "availableSizes": ["1lt"],
+      "price": 49.9
+    },
+    {
+      "_id": "papas1",
+      "image": "/images/papas2.jpg",
+      "name": "papas",
+      "title": "Papas Fritas",
+      "description": "Papas fritas Chicas",
+      "availableSizes": ["Chicas"],
+      "price": 49.9
+    },
+    {
+      "_id": "papas2",
+      "image": "/images/papas2.jpg",
+      "name": "papas",
+      "title": "Papas Fritas",
+      "description": "Papas fritas Grandes",
+      "availableSizes": ["Grandes"],
       "price": 49.9
     }
   ]
 }
+
+
+

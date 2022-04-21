@@ -6,6 +6,8 @@ import Zoom from "react-reveal/Zoom";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
 import { addToCart } from "../actions/cartActions";
+import "../styles/Products.css";
+import "../styles/ModalDetails.css";
 
 class Products extends Component {
   constructor(props) {
@@ -23,13 +25,21 @@ class Products extends Component {
   closeModal = () => {
     this.setState({ product: null });
   };
+
+  
   render() {
     const { product } = this.state;
+    console.log(product);
+    const handleClick = (e) => {
+      e.preventDefault();
+      this.closeModal();
+      this.props.addToCart(product)
+    };
     return (
       <div>
         <Fade bottom cascade>
           {!this.props.products ? (
-            <div>Loading...</div>
+            <div className="loading-products">Cargando...</div>
           ) : (
             <ul className="products">
               {this.props.products.map((product) => (
@@ -40,15 +50,17 @@ class Products extends Component {
                       onClick={() => this.openModal(product)}
                     >
                       <img src={product.image} alt={product.title}></img>
-                      <p>{product.title}</p>
+                      <p className="product-title">{product.title}</p>
                     </a>
                     <div className="product-price">
-                      <div>{formatCurrency(product.price)}</div>
+                      {formatCurrency(product.price)}
+                    </div>
+                    <div className="button-container"> 
                       <button
                         onClick={() => this.props.addToCart(product)}
-                        className="button primary"
+                        className="button-primary"
                       >
-                        Add To Cart
+                        Agregar al Carrito
                       </button>
                     </div>
                   </div>
@@ -57,8 +69,14 @@ class Products extends Component {
             </ul>
           )}
         </Fade>
+
         {product && (
-          <Modal isOpen={true} onRequestClose={this.closeModal} ariaHideApp={false}>
+          <Modal
+            isOpen={true}
+            onRequestClose={this.closeModal}
+            ariaHideApp={false}
+            className="modal-details"
+          >
             <Zoom>
               <button className="close-modal" onClick={this.closeModal}>
                 x
@@ -66,31 +84,32 @@ class Products extends Component {
               <div className="product-details">
                 <img src={product.image} alt={product.title}></img>
                 <div className="product-details-description">
-                  <p>
+                  <p className="product-modal-title">
                     <strong>{product.title}</strong>
                   </p>
-                  <p>{product.description}</p>
-                  <p>
-                    Avaiable Sizes:{" "}
+                  <p className="product-description-modal">{product.description}</p>
+                  <p className="product-sizes">
+                    <p className="product-size-text">
+                    Tamaños disponibles:{" "}
+                    </p>
                     {product.availableSizes.map((x) => (
-                      <span>
+                      <span className="sizes-button-container-modal">
                         {" "}
-                        <button className="button">{x}</button>
+                        <button className="button-sizes">{x}</button>
                       </span>
                     ))}
                   </p>
-                  <div className="product-price">
-                    <div>{formatCurrency(product.price)}</div>
-                    <button
-                      className="button primary"
-                      onClick={() => {
-                        this.props.addToCart(product);
-                        this.closeModal();
-                      }}
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
+                  <div className="product-price-modal">
+                      {formatCurrency(product.price)}
+                    </div>
+                    <div className="button-addcart-container-modal"> 
+                      <button
+                        onClick={handleClick}
+                        className="button-addcart-modal"
+                      >
+                        Agregar al Carrito
+                      </button>
+                    </div>
                 </div>
               </div>
             </Zoom>

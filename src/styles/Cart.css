@@ -1,0 +1,132 @@
+.cart {
+  padding: 2rem 0 2rem 2rem;
+  margin: 1rem;
+  display: flex;
+}
+.cart-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+.cart-items {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.cart-items img {
+  width: 5rem;
+}
+.cart-items li {
+  display: flex;
+}
+.cart-items li div {
+  padding: 0.5rem;
+}
+.cart-items li div:last-child {
+  flex: 1;
+}
+.item-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.quantity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  text-align: right;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+.button-container-cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.button-delete {
+  padding: 1rem;
+  border: none;
+  background-color: #e31837;
+  cursor: pointer;
+  width: 80%;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  transition: 0.2s ease-out;
+}
+.button-delete:hover {
+  color: #fff;
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.total > div {
+  font-size: 2rem;
+  color: #fff;
+}
+.total-price-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.total-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.total > div,
+.total > button {
+  flex: 1;
+}
+
+.button-checkout {
+  padding: 1rem;
+  border: none;
+  background-color: #e31837;
+  cursor: pointer;
+  width: 80%;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  transition: 0.2s ease-out;
+}
+.button-checkout:hover {
+  color: #fff;
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+
+.button-send {
+  padding: 1rem;
+  border: none;
+  background-color: #e31837;
+  cursor: pointer;
+  width: 100%;
+  height: 6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  transition: 0.2s ease-out;
+}
+.button-send:hover {
+  color: #fff;
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}

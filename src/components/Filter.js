@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { filterProducts, sortProducts } from "../actions/productActions";
+import "../styles/Filter.css";
 
 class Filter extends Component {
   render() {
@@ -9,11 +10,12 @@ class Filter extends Component {
     ) : (
       <div className="filter">
         <div className="filter-result">
-          {this.props.filteredProducts.length} Products
+          {this.props.filteredProducts.length} Productos
         </div>
         <div className="filter-sort">
-          Order{" "}
+          Ordenar por{" "}
           <select
+            className="filter-sort-select"
             value={this.props.sort}
             onChange={(e) =>
               this.props.sortProducts(
@@ -22,26 +24,26 @@ class Filter extends Component {
               )
             }
           >
-            <option value="latest">Latest</option>
-            <option value="lowest">Lowest</option>
-            <option value="highest">Highest</option>
+            <option className="sort-option" value="latest">Ultimo</option>
+            <option className="sort-option" value="lowest">Menor Precio</option>
+            <option className="sort-option" value="highest">Mayor Precio</option>
           </select>
         </div>
         <div className="filter-size">
-          Filter{" "}
+          Filtrar por{" "}
           <select
+          className="filter-size-select"
             value={this.props.size}
             onChange={(e) =>
               this.props.filterProducts(this.props.products, e.target.value)
             }
           >
-            <option value="">ALL</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
+            <option value="">Todo</option>
+            <option value="Burger">Burgers</option>
+            <option value="Pizza">Pizzas</option>
+            <option value="Sandwich">Sandwiches</option>
+            <option value="Mila">Milanesas</option>
+            <option value="drink">Bebidas</option>
           </select>
         </div>
       </div>
