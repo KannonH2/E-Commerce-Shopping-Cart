@@ -1,10 +1,12 @@
 const express = require("express");
+const path = require("path");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const shortid = require("shortid");
+require("dotenv").config({ path: "./config.env" });
 
 
-const mongodb_uri = "mongodb+srv://donjuanpizzeria:Fer32609676@cluster0.wm8z2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongodb_uri = process.env.MONGODB_URI;
 
 
 const app = express();
@@ -16,6 +18,18 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
+
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static(path.join(__dirname, '/build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/build/index.html'));
+  });
+}else {
+  app.get("/", (req, res) => {
+    res.send("Api Running");
+  });
+}
 
 mongoose.connect(mongodb_uri, {
   useNewUrlParser: true,
