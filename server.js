@@ -3,6 +3,10 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const shortid = require("shortid");
 
+
+const mongodb_uri = process.env.MONGODB_URI;
+
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -12,7 +16,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
+mongoose.connect(mongodb_uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
