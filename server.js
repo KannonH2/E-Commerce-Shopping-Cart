@@ -8,7 +8,6 @@ require("dotenv").config({ path: "./config.env" });
 
 const mongodb_uri = process.env.MONGODB_URI;
 
-
 const app = express();
 app.use(bodyParser.json());
 
@@ -37,6 +36,8 @@ mongoose.connect(mongodb_uri, {
   useUnifiedTopology: true,
 });
 
+
+
 const Product = mongoose.model(
   "products",
   new mongoose.Schema({
@@ -50,18 +51,22 @@ const Product = mongoose.model(
   })
 );
 
-app.get("/api/products", async (req, res) => {
-  const products = await Product.find({});
-  res.send(products);
+app.route("/products").get((req, res) => {
+  Product.find()
+    .then((products) => res.json(products))
+    .catch((err) => res.status(400).json("Error: " + err));
 });
 
-app.post("/api/products", async (req, res) => {
+
+
+
+app.post("/products", async (req, res) => {
   const newProduct = new Product(req.body);
   const savedProduct = await newProduct.save();
   res.send(savedProduct);
 });
 
-app.delete("/api/products/:id", async (req, res) => {
+app.delete("/products/:id", async (req, res) => {
   const deletedProduct = await Product.findByIdAndDelete(req.params.id);
   res.send(deletedProduct);
 });
@@ -94,7 +99,7 @@ const Order = mongoose.model(
   )
 );
 
-app.post("/api/orders", async (req, res) => {
+app.post("/orders", async (req, res) => {
   if (
     !req.body.name ||
     !req.body.phone ||
@@ -108,7 +113,7 @@ app.post("/api/orders", async (req, res) => {
   res.send(order);
 });
 
-app.get("/api/orders", async (req, res) => {
+app.get("/orders", async (req, res) => {
   const orders = await Order.find({});
   res.send(orders);
 });
